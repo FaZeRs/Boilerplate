@@ -1,7 +1,7 @@
 <?php
 
-use Modules\User\Entities\Role\Role;
 use Modules\User\Entities\Permission\Permission;
+use Modules\User\Entities\Role\Role;
 
 return [
     'name' => 'User',
@@ -45,36 +45,36 @@ return [
      * Configurations for the user
      */
     'users' => [
-	    /*
-		 * Whether or not public registration is on
-		 */
-	    'registration' => env('ENABLE_REGISTRATION', 'true'),
+        /*
+         * Whether or not public registration is on
+         */
+        'registration' => env('ENABLE_REGISTRATION', 'true'),
 
-	    /*
-		 * The role the user is assigned to when they sign up from the frontend, not namespaced
-		 */
-	    'default_role' => 'User',
-	    //'default_role' => 2,
+        /*
+         * The role the user is assigned to when they sign up from the frontend, not namespaced
+         */
+        'default_role' => 'User',
+        //'default_role' => 2,
 
-	    /*
-		 * Whether or not the user has to confirm their email when signing up
-		 */
-	    'confirm_email' => true,
+        /*
+         * Whether or not the user has to confirm their email when signing up
+         */
+        'confirm_email' => true,
 
-	    /*
-		 * Whether or not the users email can be changed on the edit profile screen
-		 */
-	    'change_email' => true,
+        /*
+         * Whether or not the users email can be changed on the edit profile screen
+         */
+        'change_email' => true,
     ],
 
     /*
      * Configuration for roles
      */
     'roles' => [
-	    /*
-		 * Whether a role must contain a permission or can be used standalone as a label
-		 */
-	    'role_must_contain_permission' => true,
+        /*
+         * Whether a role must contain a permission or can be used standalone as a label
+         */
+        'role_must_contain_permission' => true,
     ],
 
     /*
@@ -88,9 +88,9 @@ return [
      * Application captcha specific settings
      */
     'captcha' => [
-	    /*
-		 * Whether the registration captcha is on or off
-		 */
-	    'registration' => env('REGISTRATION_CAPTCHA_STATUS', false),
+        /*
+         * Whether the registration captcha is on or off
+         */
+        'registration' => env('REGISTRATION_CAPTCHA_STATUS', false),
     ],
 ];
