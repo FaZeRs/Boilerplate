@@ -6,7 +6,9 @@ language: php
 php:
   - '7.0'
   - '7.1'
-  
+
+sudo: false
+
 before_script:
   - mysql -e 'create database homestead_test;'
   - composer self-update
@@ -21,4 +23,8 @@ before_script:
   - npm install
   
 script:
-  - vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+  - vendor/bin/phpunit --coverage-clover=coverage.clover
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
