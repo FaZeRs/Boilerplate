@@ -83,7 +83,7 @@
       .sidebar-menu > li > a > span,
       .sidebar-menu > li > .treeview-menu,
       .sidebar-menu >li > a > .pull-right,
-      .sidebar-menu li.header {
+      .sidebar-menu li.menu-title {
         display: none!important;
       }
 
@@ -114,7 +114,7 @@
 //A fix for text overflow while transitioning from sidebar mini to full sidebar
 .sidebar-menu,
 .main-sidebar .user-panel,
-.sidebar-menu > li.header {
+.sidebar-menu > li.menu-title {
   white-space: nowrap!important;
   overflow: hidden;
 }
@@ -122,7 +122,7 @@
   overflow: visible;
 }
 .sidebar-form,
-.sidebar-menu > li.header {
+.sidebar-menu > li.menu-title {
   overflow: hidden;
   text-overflow: clip;
 }
