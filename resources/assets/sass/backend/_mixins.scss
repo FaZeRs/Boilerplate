@@ -118,7 +118,7 @@
   //Sidebar Menu. First level links
   .sidebar-menu > li {
     //Section Headning
-    &.header {
+    &.menu-title {
       color: lighten($sidebar-dark-bg, 20%);
       background: darken($sidebar-dark-bg, 4%);
     }
@@ -209,7 +209,7 @@
     @include transition(border-left-color .3s ease);
     //border-left: 3px solid transparent;
     //Section Headning
-    &.header {
+    &.menu-title {
       color: lighten($sidebar-light-color, 25%);
       background: $sidebar-light-bg;
     }

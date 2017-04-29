@@ -47,7 +47,7 @@
     border-left-color: $light-blue;
   }
 
-  > li.header {
+  > li.menu-title {
     border-bottom: 1px solid #ddd;
     color: #777;
     margin-bottom: 10px;
@@ -135,7 +135,7 @@
       }
     }
 
-    > li.header {
+    > li.menu-title {
       line-height: 35px;
       padding: 0 10px;
       font-size: 20px;
