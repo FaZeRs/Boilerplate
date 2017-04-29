@@ -12,11 +12,10 @@ return [
     | found in a intuitive way.
     |
     */
+
     'general' => [
         'home'   => 'Home',
         'logout' => 'Logout',
     ],
-    'user'    => [
-        'account' => 'My Account',
-    ],
+
 ];

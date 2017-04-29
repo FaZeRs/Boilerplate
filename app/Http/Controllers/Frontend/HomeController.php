@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
+
+use App\Http\Controllers\Controller;
 
 /**
  * Class HomeController.
@@ -12,6 +14,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        return view('frontend.welcome');
     }
 }
