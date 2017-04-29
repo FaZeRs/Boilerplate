@@ -14,6 +14,20 @@ return [
     */
 
     'general' => [
+        'all'     => 'All',
+        'yes'     => 'Yes',
+        'no'      => 'No',
+        'custom'  => 'Custom',
+        'actions' => 'Actions',
+        'active'  => 'Active',
+        'buttons' => [
+            'save'   => 'Save',
+            'update' => 'Update',
+        ],
+        'hide'              => 'Hide',
+        'inactive'          => 'Inactive',
+        'none'              => 'None',
+        'show'              => 'Show',
         'toggle_navigation' => 'Toggle Navigation',
     ],
 ];

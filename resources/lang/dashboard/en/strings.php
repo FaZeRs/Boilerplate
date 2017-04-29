@@ -12,18 +12,49 @@ return [
     | found in a intuitive way.
     |
     */
-    'general'   => [
-        'all_rights_reserved' => 'All Rights Reserved.',
-        'srefcms_link'        => 'srefCMS',
-        'member_since'        => 'Member since',
-        'status'              => [
-            'online'  => 'Online',
-            'offline' => 'Offline',
+
+    'backend' => [
+
+        'dashboard' => [
+            'title'   => 'Administrative Dashboard',
+            'welcome' => 'Welcome',
         ],
 
-    ],
-    'dashboard' => [
-        'title'   => 'Administrative Dashboard',
-        'welcome' => 'Welcome',
+        'general' => [
+            'all_rights_reserved' => 'All Rights Reserved.',
+            'are_you_sure'        => 'Are you sure you want to do this?',
+            'boilerplate_link'    => 'Laravel 5 Boilerplate',
+            'continue'            => 'Continue',
+            'member_since'        => 'Member since',
+            'minutes'             => ' minutes',
+            'search_placeholder'  => 'Search...',
+            'timeout'             => 'You were automatically logged out for security reasons since you had no activity in ',
+
+            'see_all' => [
+                'messages'      => 'See all messages',
+                'notifications' => 'View all',
+                'tasks'         => 'View all tasks',
+            ],
+
+            'status' => [
+                'online'  => 'Online',
+                'offline' => 'Offline',
+            ],
+
+            'you_have' => [
+                'messages'      => '{0} You don\'t have messages|{1} You have 1 message|[2,Inf] You have :number messages',
+                'notifications' => '{0} You don\'t have notifications|{1} You have 1 notification|[2,Inf] You have :number notifications',
+                'tasks'         => '{0} You don\'t have tasks|{1} You have 1 task|[2,Inf] You have :number tasks',
+            ],
+        ],
+
+        'search' => [
+            'empty'      => 'Please enter a search term.',
+            'incomplete' => 'You must write your own search logic for this system.',
+            'title'      => 'Search Results',
+            'results'    => 'Search Results for :query',
+        ],
+
+        'welcome' => '',
     ],
 ];

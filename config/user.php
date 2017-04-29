@@ -6,8 +6,8 @@ use Modules\User\Entities\Role\Role;
 return [
     'name' => 'User',
     /*
- * Users table used to store users
- */
+	 * Users table used to store users
+	 */
     'users_table' => 'users',
 
     /*

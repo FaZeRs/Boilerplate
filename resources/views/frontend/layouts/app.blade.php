@@ -26,7 +26,7 @@
 </head>
 <body id="app-layout">
     <div id="app">
-        @include('includes.nav')
+        @include('frontend.includes.nav')
         <div class="container">
             @include('includes.partials.messages')
             @yield('content')
