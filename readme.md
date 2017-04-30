@@ -8,3 +8,7 @@
 [![Scrutinizer Quality Score](https://img.shields.io/scrutinizer/g/FaZeRs/boilerplate/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/FaZeRs/boilerplate/)
 [![StyleCI](https://styleci.io/repos/89625225/shield)](https://styleci.io/repos/89625225)
 
+### Used resources
+[Laravel 5.4](https://laravel.com)
+[Laravel 5.4 Boilerplate](http://laravel-boilerplate.com)
+[AsgardCms](https://asgardcms.com)
