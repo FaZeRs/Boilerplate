@@ -4,8 +4,192 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce9a99e0325216a72ee35455216cb580",
+    "content-hash": "a492a2cf75c1fcfe6cf64210ffde149a",
     "packages": [
+        {
+            "name": "arcanedev/log-viewer",
+            "version": "4.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ARCANEDEV/LogViewer.git",
+                "reference": "5ce287b6ef132d0a129337fbe6f472929bee89dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ARCANEDEV/LogViewer/zipball/5ce287b6ef132d0a129337fbe6f472929bee89dc",
+                "reference": "5ce287b6ef132d0a129337fbe6f472929bee89dc",
+                "shasum": ""
+            },
+            "require": {
+                "arcanedev/support": "~4.1",
+                "php": ">=5.6",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpcov": "~3.0",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Arcanedev\\LogViewer\\": "src/"
+                },
+                "files": [
+                    "constants.php",
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ARCANEDEV",
+                    "email": "arcanedev.maroc@gmail.com",
+                    "homepage": "https://github.com/arcanedev-maroc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides a Log Viewer for Laravel 5",
+            "homepage": "https://github.com/ARCANEDEV/LogViewer",
+            "keywords": [
+                "arcanedev",
+                "arcanesoft",
+                "laravel",
+                "log",
+                "log viewer",
+                "log-viewer",
+                "logviewer"
+            ],
+            "time": "2017-04-23T11:47:56+00:00"
+        },
+        {
+            "name": "arcanedev/no-captcha",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ARCANEDEV/noCAPTCHA.git",
+                "reference": "cd5c4fe01776b02feb32b6500b6c276439479c21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ARCANEDEV/noCAPTCHA/zipball/cd5c4fe01776b02feb32b6500b6c276439479c21",
+                "reference": "cd5c4fe01776b02feb32b6500b6c276439479c21",
+                "shasum": ""
+            },
+            "require": {
+                "arcanedev/support": "~4.0",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.6.4",
+                "psr/http-message": "~1.0"
+            },
+            "require-dev": {
+                "arcanedev/laravel-html": "~5.0",
+                "phpunit/phpcov": "~3.0",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Arcanedev\\NoCaptcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ARCANEDEV",
+                    "email": "arcanedev.maroc@gmail.com",
+                    "homepage": "https://github.com/arcanedev-maroc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "No CAPTCHA (new Google reCAPTCHA) with Laravel support",
+            "homepage": "https://github.com/ARCANEDEV/noCAPTCHA",
+            "keywords": [
+                "arcanedev",
+                "captcha",
+                "google",
+                "laravel",
+                "no-captcha",
+                "recaptcha"
+            ],
+            "time": "2017-03-17T16:34:51+00:00"
+        },
+        {
+            "name": "arcanedev/support",
+            "version": "4.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ARCANEDEV/Support.git",
+                "reference": "481caa8e200b8450d4223a9a7ad80bd5e63f4245"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ARCANEDEV/Support/zipball/481caa8e200b8450d4223a9a7ad80bd5e63f4245",
+                "reference": "481caa8e200b8450d4223a9a7ad80bd5e63f4245",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "~5.4.0",
+                "illuminate/support": "~5.4.0",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "orchestra/testbench-browser-kit": "~3.4.0",
+                "phpunit/phpcov": "~3.0",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Arcanedev\\Support\\": "src/"
+                },
+                "files": [
+                    "constants.php",
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ARCANEDEV",
+                    "email": "arcanedev.maroc@gmail.com",
+                    "homepage": "https://github.com/arcanedev-maroc"
+                }
+            ],
+            "description": "ARCANEDEV Support Helpers",
+            "homepage": "https://github.com/ARCANEDEV/Support",
+            "keywords": [
+                "arcanedev",
+                "arcanesoft",
+                "laravel",
+                "support"
+            ],
+            "time": "2017-04-28T11:30:05+00:00"
+        },
         {
             "name": "davejamesmiller/laravel-breadcrumbs",
             "version": "3.0.2",
@@ -1575,12 +1759,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FaZeRs/Dashboard.git",
-                "reference": "d1f7ceb1ad1583012151e1efffad1c42cbcda5d3"
+                "reference": "5f277a421692d6afe7c46a13c20392e9bb6976e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FaZeRs/Dashboard/zipball/d1f7ceb1ad1583012151e1efffad1c42cbcda5d3",
-                "reference": "d1f7ceb1ad1583012151e1efffad1c42cbcda5d3",
+                "url": "https://api.github.com/repos/FaZeRs/Dashboard/zipball/5f277a421692d6afe7c46a13c20392e9bb6976e6",
+                "reference": "5f277a421692d6afe7c46a13c20392e9bb6976e6",
                 "shasum": ""
             },
             "require": {
@@ -1588,7 +1772,7 @@
                 "joshbrw/laravel-module-installer": "^0.1.2",
                 "maatwebsite/laravel-sidebar": "~2.1",
                 "php": ">=5.6.4",
-                "yajra/laravel-datatables-oracle": "^7.0"
+                "yajra/laravel-datatables-oracle": "^7.3"
             },
             "type": "laravel-module",
             "autoload": {
@@ -1612,7 +1796,7 @@
                 "cms",
                 "dashboard"
             ],
-            "time": "2017-04-30T00:51:17+00:00"
+            "time": "2017-04-30T01:14:20+00:00"
         },
         {
             "name": "sref/user-module",
@@ -1620,15 +1804,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FaZeRs/User.git",
-                "reference": "7d799ed28fcf155c974af48866a6176da33790bf"
+                "reference": "68ef57c746f1b0b1e3a9ef2b79399e5595736d54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FaZeRs/User/zipball/7d799ed28fcf155c974af48866a6176da33790bf",
-                "reference": "7d799ed28fcf155c974af48866a6176da33790bf",
+                "url": "https://api.github.com/repos/FaZeRs/User/zipball/68ef57c746f1b0b1e3a9ef2b79399e5595736d54",
+                "reference": "68ef57c746f1b0b1e3a9ef2b79399e5595736d54",
                 "shasum": ""
             },
             "require": {
+                "arcanedev/no-captcha": "^4.0",
                 "joshbrw/laravel-module-installer": "^0.1.2",
                 "laravel/socialite": "^3.0",
                 "php": ">=5.6.4"
@@ -1655,7 +1840,7 @@
                 "cms",
                 "user"
             ],
-            "time": "2017-04-30T00:50:48+00:00"
+            "time": "2017-04-30T01:14:01+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

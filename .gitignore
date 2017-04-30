@@ -22,7 +22,9 @@ Todo.rtf
 npm-debug.log
 /Modules/User
 /Modules/Dashboard
+/Modules/Logs
 *.gitkeep
 /resources/lang/user
 /resources/lang/dashboard
+/resources/lang/logs
 /resources/views/modules
