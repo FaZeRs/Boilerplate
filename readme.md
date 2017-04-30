@@ -1,4 +1,4 @@
-## Laravel 5.4 Boilerplate CMS
+## Laravel Boilerplate CMS
 
 [![Latest Stable Version](https://img.shields.io/github/release/FaZeRs/Boilerplate.svg?style=flat-square)](https://packagist.org/packages/sref/boilerplate)
 [![Total Downloads](https://img.shields.io/packagist/dt/sref/boilerplate.svg?style=flat-square)](https://packagist.org/packages/sref/boilerplate)
