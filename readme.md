@@ -9,6 +9,6 @@
 [![StyleCI](https://styleci.io/repos/89625225/shield)](https://styleci.io/repos/89625225)
 
 ### Used resources
-[Laravel 5.4](https://laravel.com)
-[Laravel 5.4 Boilerplate](http://laravel-boilerplate.com)
-[AsgardCms](https://asgardcms.com)
+* [Laravel 5.4](https://laravel.com)
+* [Laravel 5.4 Boilerplate](http://laravel-boilerplate.com)
+* [AsgardCms](https://asgardcms.com)
