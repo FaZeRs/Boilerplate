@@ -23,8 +23,10 @@ npm-debug.log
 /Modules/User
 /Modules/Dashboard
 /Modules/Logs
+/Modules/ModuleManager
 *.gitkeep
 /resources/lang/user
 /resources/lang/dashboard
 /resources/lang/logs
+/resources/lang/modulemanager
 /resources/views/modules
