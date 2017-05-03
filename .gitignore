@@ -15,6 +15,7 @@ Thumbs.db
 /nbproject
 _ide_helper.php
 composer.phar
+composer.lock
 error.log
 Todo.rtf
 .vagrant
