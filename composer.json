@@ -17,7 +17,7 @@
         "sref/dashboard-module": "^1.0",
         "sref/logs-module": "^1.0",
         "sref/user-module": "^1.0",
-        "sref/module-manager-module": "^1.0"
+        "sref/workshop-module": "^1.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^2.3",

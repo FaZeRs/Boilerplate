@@ -24,10 +24,10 @@ npm-debug.log
 /Modules/User
 /Modules/Dashboard
 /Modules/Logs
-/Modules/ModuleManager
+/Modules/Workshop
 *.gitkeep
 /resources/lang/user
 /resources/lang/dashboard
 /resources/lang/logs
-/resources/lang/modulemanager
+/resources/lang/workshop
 /resources/views/modules
