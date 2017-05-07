@@ -25,9 +25,11 @@ npm-debug.log
 /Modules/Dashboard
 /Modules/Logs
 /Modules/Workshop
+/Modules/Language
 *.gitkeep
 /resources/lang/user
 /resources/lang/dashboard
 /resources/lang/logs
 /resources/lang/workshop
+/resources/lang/language
 /resources/views/modules
