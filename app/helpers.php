@@ -3,7 +3,7 @@
 /**
  * Global helpers file with misc functions.
  */
-if (!function_exists('app_name')) {
+if (! function_exists('app_name')) {
     /**
      * Helper to grab the application name.
      *
@@ -14,7 +14,7 @@ if (!function_exists('app_name')) {
         return config('app.name');
     }
 }
-if (!function_exists('includeRouteFiles')) {
+if (! function_exists('includeRouteFiles')) {
 
     /**
      * Loops through a folder and requires all PHP files
@@ -29,7 +29,7 @@ if (!function_exists('includeRouteFiles')) {
             $it = new recursiveIteratorIterator($rdi);
 
             while ($it->valid()) {
-                if (!$it->isDot() && $it->isFile() && $it->isReadable() && $it->current()->getExtension() === 'php') {
+                if (! $it->isDot() && $it->isFile() && $it->isReadable() && $it->current()->getExtension() === 'php') {
                     require $it->key();
                 }
 
