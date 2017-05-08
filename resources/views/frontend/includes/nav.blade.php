@@ -14,15 +14,18 @@
 
         <div class="collapse navbar-collapse" id="frontend-navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                @if (config('locale.status') && count(config('locale.languages')) > 1)
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ trans('menus.language-picker.language') }}
-                            <span class="caret"></span>
-                        </a>
+                @if (Route::has('language.switch'))
+                    @if (config('locale.status') && count($languages) > 1)
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                {{ trans('language::menus.language-picker.language') }}
+                                <span class="caret"></span>
+                            </a>
 
-                        @include('includes.partials.lang')
-                    </li>
+                            @include('language::includes.partials.lang')
+                        </li>
+                    @endif
                 @endif
                 @if (Route::has('frontend.auth.login'))
                     @include('user::frontend.includes.nav')

@@ -11,6 +11,8 @@
                         @if (access()->guest())
                             Login
                         @else
+                            {{ \Carbon\Carbon::now()->diffForHumans() }}
+                        <br>
                             You are logged in!
                         @endif
                     </div>
