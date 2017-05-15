@@ -1,7 +1,7 @@
 {
-  "/js/frontend.js": "/js/frontend.9e58c8db09f424d540c8.js",
-  "/js/backend.js": "/js/backend.a15946ba09a06ba651d5.js",
-  "/mix.js": "/mix.247ab120fe7680658924.js",
-  "/css/frontend.css": "/css/frontend.e85f8c3601983c8e12bb0519328e4691.css",
-  "/css/backend.css": "/css/backend.69311c55c41c2be3a7364b0b6f74c287.css"
+  "/js/backend.js": "/js/backend.js",
+  "/js/frontend.js": "/js/frontend.js",
+  "/mix.js": "/mix.js",
+  "/css/frontend.css": "/css/frontend.css",
+  "/css/backend.css": "/css/backend.css"
 }

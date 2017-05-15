@@ -15,6 +15,16 @@ return [
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
+	|--------------------------------------------------------------------------
+	| Application cache
+	|--------------------------------------------------------------------------
+	| Set this to true to use the cache decorators, this will greatly improve
+	| the application speed and performance
+	*/
+    'cache' => env('APP_CACHE', false),
+
+
+    /*
     |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
@@ -166,8 +176,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Collective\Html\HtmlServiceProvider::class,
-        Laravel\Tinker\TinkerServiceProvider::class,
         Nwidart\Modules\LaravelModulesServiceProvider::class,
 
         /*
@@ -231,8 +239,6 @@ return [
         /*
          * Third Party Aliases
          */
-        'Form'         => Collective\Html\FormFacade::class,
-        'Html'         => Collective\Html\HtmlFacade::class,
         'Module'       => Nwidart\Modules\Facades\Module::class,
     ],
 

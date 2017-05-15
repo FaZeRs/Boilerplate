@@ -11,16 +11,19 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/assets/sass/frontend/app.scss', 'public/css/frontend.css')
-    .sass('resources/assets/sass/backend/app.scss', 'public/css/backend.css')
+mix.sass('Themes/Bootstrap/resources/sass/app.scss', 'public/css/frontend.css')
+    .sass('Themes/AdminLTE/resources/sass/app.scss', 'public/css/backend.css')
     .js([
-        'resources/assets/js/frontend/app.js',
-        'resources/assets/js/plugin/sweetalert/sweetalert.min.js',
-        'resources/assets/js/plugins.js'
+        'Themes/Bootstrap/resources/js/app.js',
+        'Themes/Bootstrap/resources/js/plugin/sweetalert/sweetalert.min.js',
+        'Themes/Bootstrap/resources/js/plugins.js'
     ], 'public/js/frontend.js')
     .js([
-        'resources/assets/js/backend/app.js',
-        'resources/assets/js/plugin/sweetalert/sweetalert.min.js',
-        'resources/assets/js/plugins.js'
-    ], 'public/js/backend.js')
-    .version();
+        'Themes/AdminLTE/resources/js/app.js',
+        'Themes/AdminLTE/resources/js/plugin/sweetalert/sweetalert.min.js',
+        'Themes/AdminLTE/resources/js/plugins.js'
+    ], 'public/js/backend.js');
+
+if(mix.config.inProduction){
+    mix.version();
+}

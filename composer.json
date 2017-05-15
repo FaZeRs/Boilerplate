@@ -11,17 +11,19 @@
     "require": {
         "php": ">=7.0.0",
         "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0",
-        "laravelcollective/html": "5.4.*",
         "nwidart/laravel-modules": "^1.20",
+        "sref/adminlte-theme": "^1.0",
+        "sref/bootstrap-theme": "^1.0",
+        "sref/core-module": "^1.0",
         "sref/dashboard-module": "^1.0",
+        "sref/language-module": "^1.0",
         "sref/logs-module": "^1.0",
+        "sref/menu-module": "^1.0",
+        "sref/setting-module": "^1.0",
         "sref/user-module": "^1.0",
-        "sref/workshop-module": "^1.0",
-        "sref/language-module": "^1.0"
+        "sref/workshop-module": "^1.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^2.3",
         "friendsofphp/php-cs-fixer": "^2.2",
         "fzaninotto/faker": "^1.6",
         "laravel/browser-kit-testing": "^1.0",
@@ -38,9 +40,7 @@
             "App\\": "app/",
             "Modules\\": "Modules/"
         },
-        "files": [
-            "app/helpers.php"
-        ]
+        "files": []
     },
     "autoload-dev": {
         "psr-4": {

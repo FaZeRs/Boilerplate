@@ -10,4 +10,5 @@ return [
      */
     'status' => true,
 
+    'hideDefaultLocaleInURL' => true,
 ];
