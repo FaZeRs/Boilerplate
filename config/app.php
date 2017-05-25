@@ -15,14 +15,13 @@ return [
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
-	|--------------------------------------------------------------------------
-	| Application cache
-	|--------------------------------------------------------------------------
-	| Set this to true to use the cache decorators, this will greatly improve
-	| the application speed and performance
-	*/
+    |--------------------------------------------------------------------------
+    | Application cache
+    |--------------------------------------------------------------------------
+    | Set this to true to use the cache decorators, this will greatly improve
+    | the application speed and performance
+    */
     'cache' => env('APP_CACHE', false),
-
 
     /*
     |--------------------------------------------------------------------------
