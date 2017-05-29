@@ -4,7 +4,11 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Session\TokenMismatchException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Modules\Core\Exceptions\GeneralException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -60,7 +64,15 @@ class Handler extends ExceptionHandler
         if ($exception instanceof GeneralException) {
             return redirect()->back()->withInput()->withFlashDanger($exception->getMessage());
         }
+	    if (app()->environment() == 'production') {
+		    if ($exception instanceof NotFoundHttpException) {
+			    return response()->view('core::errors.404', [], 404);
+		    }
 
+		    if ($exception instanceof ModelNotFoundException) {
+			    return response()->view('core::errors.404', [], 404);
+		    }
+	    }
         return parent::render($request, $exception);
     }
 

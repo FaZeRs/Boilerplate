@@ -35,10 +35,4 @@ npm-debug.log
 /resources/views/modules
 /resources/views/vendor
 /resources/lang/vendor
-/config/dashboard.php
-/config/language.php
-/config/logs.php
-/config/user.php
-/config/workshop.php
-/config/core.php
-/config/menu.php
+/config/boilerplate/*
