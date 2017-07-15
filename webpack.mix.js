@@ -24,5 +24,6 @@ mix.sass('Themes/Bootstrap/resources/sass/app.scss', 'public/css/frontend.css')
         'Themes/AdminLTE/resources/js/plugins.js'
     ], 'public/js/backend.js');
 
+if(mix.inProduction){
     mix.version();
 }
