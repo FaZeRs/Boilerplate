@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+
 /**
  * Class TestCase.
  */
@@ -43,11 +44,10 @@ abstract class TestCase extends BaseTestCase
 
         // Set up the database
         Artisan::call('migrate:refresh');
-	    Artisan::call('module:seed');
+        Artisan::call('module:seed');
 
         // Run the tests in English
         App::setLocale('en');
-
     }
 
     public function tearDown()
