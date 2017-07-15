@@ -35,4 +35,3 @@ npm-debug.log
 /resources/views/modules
 /resources/views/vendor
 /resources/lang/vendor
-/config/boilerplate/*
