@@ -1,21 +1,15 @@
 git:
   submodules: false
 
-os:
-  - linux
-
 language: php
 
 cache:
   directories:
     - vendor
     - $HOME/.composer/cache
-
 php:
-  - '7.0'
-  - '7.1'
-
-sudo: false
+  - 7.0
+  - 7.1
 
 matrix:
   fast_finish: true
