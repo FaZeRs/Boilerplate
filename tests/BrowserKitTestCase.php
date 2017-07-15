@@ -2,11 +2,11 @@
 
 namespace Tests;
 
-use Modules\User\Entities\Access\Role\Role;
-use Modules\User\Entities\Access\User\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Artisan;
+use Modules\User\Entities\Access\Role\Role;
+use Modules\User\Entities\Access\User\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Laravel\BrowserKitTesting\TestCase as BaseTestCase;
 
@@ -65,9 +65,9 @@ abstract class BrowserKitTestCase extends BaseTestCase
         $this->baseUrl = config('app.url', 'http://boilerplate.dev');
 
         // Set up the database
-	    Artisan::call('module:publish-config');
-	    Artisan::call('module:migrate');
-	    Artisan::call('module:seed');
+        Artisan::call('module:publish-config');
+        Artisan::call('module:migrate');
+        Artisan::call('module:seed');
 
         // Run the tests in English
         App::setLocale('en');
