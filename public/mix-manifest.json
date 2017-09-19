@@ -1,6 +1,6 @@
 {
-    "/js/frontend.js": "/js/frontend.js?id=e6082c8ce02963b95c4f",
-    "/css/frontend.css": "/css/frontend.css?id=72fe65ec3d43d5a15f3d",
-    "/css/backend.css": "/css/backend.css?id=0ac18ca1d32aa9b1fa96",
-    "/js/backend.js": "/js/backend.js?id=139279f11203a8308390"
+    "/js/Bootstrap/app.js": "/js/Bootstrap/app.js",
+    "/css/Bootstrap/app.css": "/css/Bootstrap/app.css",
+    "/css/Adminlte/app.css": "/css/Adminlte/app.css",
+    "/js/Adminlte/app.js": "/js/Adminlte/app.js"
 }
