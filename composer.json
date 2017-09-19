@@ -10,24 +10,26 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "laravel/framework": "5.4.*",
-        "nwidart/laravel-modules": "^1.26",
+        "fideloper/proxy": "^3.3",
+        "laravel/framework": "5.5.*",
+        "nwidart/laravel-modules": "^2.2",
         "sref/adminlte-theme": "^1.0",
         "sref/bootstrap-theme": "^1.0",
-        "sref/core-module": "^1.0",
-        "sref/dashboard-module": "^1.0",
-        "sref/language-module": "^1.0",
-        "sref/logs-module": "^1.0",
-        "sref/menu-module": "^1.0",
-        "sref/setting-module": "^1.0",
-        "sref/user-module": "^1.0",
-        "sref/workshop-module": "^1.0"
+        "sref/core-module": "dev-l55@dev",
+        "sref/dashboard-module": "dev-l55@dev",
+        "sref/language-module": "dev-l55@dev",
+        "sref/logs-module": "dev-l55@dev",
+        "sref/menu-module": "dev-l55@dev",
+        "sref/setting-module": "dev-l55@dev",
+        "sref/user-module": "dev-l55@dev",
+        "sref/workshop-module": "dev-l55@dev"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^2.4",
+        "barryvdh/laravel-debugbar": "^3.1",
         "barryvdh/laravel-ide-helper": "^2.4",
-        "friendsofphp/php-cs-fixer": "^2.3",
-        "fzaninotto/faker": "^1.6",
+        "filp/whoops": "~2.0",
+        "friendsofphp/php-cs-fixer": "^2.6",
+        "fzaninotto/faker": "^1.7",
         "laravel/browser-kit-testing": "^2.0",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "^6.2",
@@ -55,20 +57,29 @@
     },
     "scripts": {
         "post-root-package-install": [
-            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "php artisan key:generate"
-        ],
-        "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
+            "@php artisan key:generate",
+            "@php artisan storage:link"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize --force",
-            "php artisan config:clear",
-            "php artisan route:clear"
+            "@php artisan config:clear",
+            "@php artisan route:clear"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ],
+        "clear-all": [
+            "composer dumpautoload -o",
+            "@php artisan optimize",
+            "@php artisan clear-compiled",
+            "@php artisan cache:clear",
+            "@php artisan route:clear",
+            "@php artisan view:clear",
+            "@php artisan config:clear"
         ]
     },
     "config": {
@@ -76,6 +87,6 @@
         "sort-packages": true,
         "optimize-autoloader": true
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }

@@ -64,6 +64,15 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Allow static translations to be editable via GUI
+    |--------------------------------------------------------------------------
+    | Enabling this will have slight performance hit,
+    | about 20 to 50ms page load time increase.
+    */
+    'translations-gui' => true,
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
@@ -73,7 +82,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'UTC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -86,7 +95,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => env('APP_LOCALE', 'en'),
 
     /*
     |--------------------------------------------------------------------------
@@ -99,7 +108,18 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | PHP Locale Code
+    |--------------------------------------------------------------------------
+    |
+    | The PHP locale determines the default locale that will be used
+    | by the Carbon library when setting Carbon's localization.
+    |
+    */
+    'locale_php' => env('APP_LOCALE_PHP', 'en_US'),
 
     /*
     |--------------------------------------------------------------------------
