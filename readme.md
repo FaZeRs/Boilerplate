@@ -33,8 +33,5 @@ php artisan module:seed
 yarn run dev
 ```
 ``` bash
-phpunit
-```
-``` bash
 Set INSTALLED=true in .env file
 ```
