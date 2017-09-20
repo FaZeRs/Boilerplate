@@ -42,13 +42,11 @@ env:
 before_script:
   - if [[ $EXEC_COVERAGE != 'true' ]]; then phpenv config-rm xdebug.ini ; fi
   - if [[ $EXEC_COVERAGE = 'true' ]]; then echo "memory_limit=-1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini ; fi
-  - composer self-update || true
-  - composer global update
-  - composer install --dev --no-interaction -o --no-scripts
-  - composer run-script post-root-package-install
-  - composer run-script post-create-project-cmd
-  - composer run-script post-install-cmd
-
+  - travis_retry composer self-update
+  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
+  - chmod +x travis.sh
+  - ./travis.sh
+  - php artisan clear-compiled
 
 script:
   - if [[ $EXEC_COVERAGE = 'true' ]]; then phpdbg -qrr ./vendor/bin/phpunit --coverage-clover=coverage.clover ; fi
