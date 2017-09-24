@@ -1,8 +1,8 @@
 <?php
 
 use Modules\Menu\Entities\Menu\Menu;
-use Modules\Menu\Entities\Page\Page;
 use Modules\Menu\Entities\Menu\MenuItem;
+use Modules\Menu\Entities\Page\Page;
 
 return [
     'name'                    => 'Menu',

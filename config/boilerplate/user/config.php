@@ -1,7 +1,7 @@
 <?php
 
-use Modules\User\Entities\Access\Role\Role;
 use Modules\User\Entities\Access\Permission\Permission;
+use Modules\User\Entities\Access\Role\Role;
 
 return [
     'name'                   => 'User',
@@ -18,7 +18,7 @@ return [
     /*
      * Social logins table used to store social platform information
      */
-    'social_logins_table'    => 'social_logins',
+    'social_accounts_table'    => 'social_accounts',
 
     /*
      * Sessions table used to store session variables
@@ -56,40 +56,35 @@ return [
     'role_user_table'        => 'role_user',
 
     /*
-     * Whether or not registration is enabled
-     */
-    'registration' => env('ENABLE_REGISTRATION', true),
-
-    /*
      * Configurations for the user
      */
     'users'                  => [
         /*
+         * Whether or not public registration is on
+         */
+        'registration'      => env('ENABLE_REGISTRATION', 'true'),
+
+        /*
          * The role the user is assigned to when they sign up from the frontend, not namespaced
          */
-        'default_role'      => 'user',
-        //'default_role' => 2,
+        //'default_role'      => 'User',
+        'default_role' => 3,
 
         /*
          * Whether or not the user has to confirm their email when signing up
          */
-        'confirm_email' => env('CONFIRM_EMAIL', false),
+        'confirm_email'     => true,
 
         /*
          * Whether or not the users email can be changed on the edit profile screen
          */
-        'change_email' => env('CHANGE_EMAIL', false),
+        'change_email'      => true,
 
         /*
          * Whether or not new users need to be approved by an administrator before logging in
          * If this is set to true, then confirm_email is not in effect
          */
         'requires_approval' => env('REQUIRES_APPROVAL', false),
-
-        /*
-         * Login username to be used by the controller.
-         */
-        'username' => 'email',
 
         /*
          * Session Database Driver Only
