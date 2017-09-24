@@ -41,13 +41,14 @@ env:
   - DB_DATABASE=sqlite
 
 before_script:
+  - cp .env.example .env
   - if [[ $EXEC_COVERAGE != 'true' ]]; then phpenv config-rm xdebug.ini ; fi
   - if [[ $EXEC_COVERAGE = 'true' ]]; then echo "memory_limit=-1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini ; fi
   - travis_retry composer self-update || true
-  - travis_retry composer install --n -o --no-scripts
-  - php artisan key:generate
+  - travis_retry composer install -n -o --no-scripts
 
 script:
+  - php artisan key:generate
   - if [[ $EXEC_COVERAGE = 'true' ]]; then phpdbg -qrr ./vendor/bin/phpunit --coverage-clover=coverage.clover ; fi
   - if [[ $EXEC_COVERAGE != 'true' ]]; then ./vendor/bin/phpunit ; fi
 
