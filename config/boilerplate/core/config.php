@@ -30,7 +30,7 @@ return [
     | Which administration theme to use for the back end interface
     |--------------------------------------------------------------------------
     */
-    'admin-theme' => 'Adminlte',
+    'admin-theme' => 'Coreui',
     /*
     |--------------------------------------------------------------------------
     | Enable module view overrides at theme locations
