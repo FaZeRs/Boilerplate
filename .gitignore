@@ -26,13 +26,7 @@ npm-debug.log
 /Modules/*
 /Themes/*
 *.gitkeep
-/resources/lang/user
-/resources/lang/dashboard
-/resources/lang/logs
-/resources/lang/workshop
-/resources/lang/core
-/resources/lang/menu
-/resources/lang/language
-/resources/views/modules
-/resources/views/vendor
+/public/themes/*
+/public/modules/*
 /resources/lang/vendor
+/resources/views/vendor
