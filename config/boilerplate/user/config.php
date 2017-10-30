@@ -1,7 +1,7 @@
 <?php
 
-use Modules\User\Entities\Access\Permission\Permission;
 use Modules\User\Entities\Access\Role\Role;
+use Modules\User\Entities\Access\Permission\Permission;
 
 return [
     'name'                   => 'User',
