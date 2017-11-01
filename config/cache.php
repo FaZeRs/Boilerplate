@@ -73,6 +73,10 @@ return [
             'connection' => 'default',
         ],
 
+        'translations' => [
+            'driver' => env('TRANSLATIONS_CACHE_DRIVER', 'file'),
+            'path' => storage_path('framework/cache'),
+        ],
     ],
 
     /*
@@ -86,6 +90,9 @@ return [
     |
     */
 
-    'prefix' => 'laravel',
+    'prefix' => env(
+        'CACHE_PREFIX',
+        str_slug(env('APP_NAME', 'laravel'), '_').'_cache'
+    ),
 
 ];

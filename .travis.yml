@@ -10,6 +10,7 @@ cache:
 php:
   - 7.0
   - 7.1
+  - 7.2
 
 matrix:
   fast_finish: true
@@ -40,16 +41,14 @@ env:
   - DB_DATABASE=sqlite
 
 before_script:
+  - cp .env.example .env
   - if [[ $EXEC_COVERAGE != 'true' ]]; then phpenv config-rm xdebug.ini ; fi
   - if [[ $EXEC_COVERAGE = 'true' ]]; then echo "memory_limit=-1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini ; fi
-  - composer self-update || true
-  - composer install --dev --no-interaction -o --no-scripts
-  - composer run-script post-root-package-install
-  - composer run-script post-create-project-cmd
-  - composer run-script post-install-cmd
-
+  - travis_retry composer self-update || true
+  - travis_retry composer install -n -o --no-scripts
 
 script:
+  - php artisan key:generate
   - if [[ $EXEC_COVERAGE = 'true' ]]; then phpdbg -qrr ./vendor/bin/phpunit --coverage-clover=coverage.clover ; fi
   - if [[ $EXEC_COVERAGE != 'true' ]]; then ./vendor/bin/phpunit ; fi
 

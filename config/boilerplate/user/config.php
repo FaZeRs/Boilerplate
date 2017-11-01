@@ -18,7 +18,7 @@ return [
     /*
      * Social logins table used to store social platform information
      */
-    'social_logins_table'    => 'social_logins',
+    'social_accounts_table'    => 'social_accounts',
 
     /*
      * Sessions table used to store session variables
@@ -67,8 +67,8 @@ return [
         /*
          * The role the user is assigned to when they sign up from the frontend, not namespaced
          */
-        'default_role'      => 'User',
-        //'default_role' => 2,
+        //'default_role'      => 'User',
+        'default_role' => 3,
 
         /*
          * Whether or not the user has to confirm their email when signing up

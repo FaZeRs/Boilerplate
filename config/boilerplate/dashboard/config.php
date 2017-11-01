@@ -6,54 +6,35 @@ return [
     'history_table' => 'history',
 
     'history_types_table' => 'history_types',
-    /*
-     * Skin for Admin LTE backend theme
-     *
-     * Available options:
-     *
-     * black
-     * black-light
-     * blue
-     * blue-light
-     * green
-     * green-light
-     * purple
-     * purple-light
-     * red
-     * red-light
-     * yellow
-     * yellow-light
-     */
-    'theme'               => 'blue',
 
     /*
-     * Layout for the Admin LTE backend theme
+     * BODY options for Core UI backend theme
      *
-     * Fixed:               use the class .fixed to get a fixed header and sidebar.
-     *                      This makes scrolling affect the content only and put the sidebar and header in a fixed position.
+     * Header options
+     * 1. '.header-fixed'					- Fixed Header
      *
-     * Collapsed Sidebar:   use the class .sidebar-collapse to have a collapsed sidebar upon loading.
-     *                      Use this if you want the sidebar to be hidden by default.
+     * Sidebar options
+     * 1. '.sidebar-fixed'					- Fixed Sidebar
+     * 2. '.sidebar-hidden'				- Hidden Sidebar
+     * 3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+     * 4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+     * 5. '.sidebar-compact'			  - Compact Sidebar
      *
-     * Boxed Layout:        use the class .layout-boxed to get a boxed layout that stretches only to 1250px.
-     *                      Provides spaces on both sides of the screen, if the screen is big enough.
+     *  Aside options
+     * 1. '.aside-menu-fixed'			- Fixed Aside Menu
+     * 2. '.aside-menu-hidden'			- Hidden Aside Menu
+     * 3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
      *
-     * Top Navigation:      use the class .layout-top-nav to remove the sidebar and have your links at the top navbar.
-     *                      Makes the sidebar hover the content when expanded.
+     * Breadcrumb options
+     * 1. '.breadcrumb-fixed'			- Fixed Breadcrumb
      *
-     * Sidebar Mini:        Shows the only the icons of the sidebar items when collapsed. Sidebar will not fully collapse.
-     *
-     * Available options:
-     *
-     * fixed
-     * sidebar-collapse
-     * layout-boxed
-     * layout-top-nav
-     * sidebar-mini
-     *
-     * Note: you cannot use both layout-boxed and fixed at the same time. Anything else can be mixed together.
+     * Footer options
+     * 1. '.footer-fixed'					- Fixed footer
      */
-    'layout'              => 'sidebar-mini',
+    'theme'               => [
+        'body_options' => 'header-fixed sidebar-fixed aside-menu-hidden',
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Custom Sidebar Class
