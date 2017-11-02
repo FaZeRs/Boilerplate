@@ -6,7 +6,7 @@ use Modules\Language\Entities\Translations\Translation;
 return [
     'name' => 'Language',
 
-    'languages_table' => 'language__languages',
+    'languages_table'              => 'language__languages',
     'languages_translations_table' => 'language__language_translations',
 
     'language' => Language::class,

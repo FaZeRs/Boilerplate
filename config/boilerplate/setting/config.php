@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'name'                       => 'Setting',
+    'name' => 'Setting',
 
     /*
      * Settings table used to store settings
      */
-    'settings_table'             => 'setting__settings',
+    'settings_table' => 'setting__settings',
 
     /*
      * Settings translation table used to store settings translations

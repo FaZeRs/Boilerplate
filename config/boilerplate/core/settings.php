@@ -1,19 +1,19 @@
 <?php
 
 return [
-    'app_name'         => [
+    'app_name' => [
         'description'  => 'setting::validation.attributes.backend.app_name',
         'view'         => 'text',
         'translatable' => true,
         'default'      => 'Boilerplate',
     ],
-    'app_keywords'     => [
+    'app_keywords' => [
         'description'  => 'setting::validation.attributes.backend.app_keywords',
         'view'         => 'text',
         'translatable' => true,
         'default'      => 'laravel, boilerplate',
     ],
-    'app_description'  => [
+    'app_description' => [
         'description'  => 'setting::validation.attributes.backend.app_description',
         'view'         => 'textarea',
         'translatable' => true,

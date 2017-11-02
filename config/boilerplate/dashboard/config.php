@@ -31,8 +31,8 @@ return [
      * Footer options
      * 1. '.footer-fixed'					- Fixed footer
      */
-    'theme'               => [
-        'body_options' => 'header-fixed sidebar-fixed aside-menu-hidden',
+    'theme' => [
+        'body_options' => 'header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden',
     ],
 
     /*
@@ -43,7 +43,7 @@ return [
     | You can define your own sidebar class for this module.
     | No custom sidebar: null
     */
-    'custom-sidebar'      => null,
+    'custom-sidebar' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -54,12 +54,12 @@ return [
     | extra view namespace.
     | By default every extra namespace will be set to false.
     */
-    'useViewNamespaces'   => [
+    'useViewNamespaces' => [
         // Read module views from /Themes/<backend-theme-name>/views/modules/<module-name>
-        'backend-theme'  => false,
+        'backend-theme' => false,
         // Read module views from /Themes/<frontend-theme-name>/views/modules/<module-name>
         'frontend-theme' => false,
         // Read module views from /resources/views/boilerplate/<module-name>
-        'resources'      => false,
+        'resources' => false,
     ],
 ];

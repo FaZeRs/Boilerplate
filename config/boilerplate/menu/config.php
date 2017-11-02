@@ -1,16 +1,16 @@
 <?php
 
 use Modules\Menu\Entities\Menu\Menu;
-use Modules\Menu\Entities\Page\Page;
 use Modules\Menu\Entities\Menu\MenuItem;
+use Modules\Menu\Entities\Page\Page;
 
 return [
-    'name'                    => 'Menu',
+    'name' => 'Menu',
 
     /*
      * Menus table used to store menus
      */
-    'menus_table'             => 'menu__menus',
+    'menus_table' => 'menu__menus',
 
     /*
      * Menu Translations table used to store menu translations
@@ -20,27 +20,27 @@ return [
     /*
      * Menu model used to create correct relations. Update the menu if it is in a different namespace.
      */
-    'menu'             => Menu::class,
+    'menu' => Menu::class,
 
     /*
      * Menu Items table used to store menu items
      */
-    'menu_items_table'        => 'menu__menu_items',
+    'menu_items_table' => 'menu__menu_items',
 
     /*
      * Menu Item Translations table used to store menu item translations
      */
-    'menu_item_translations'  => 'menu__menu_item_translations',
+    'menu_item_translations' => 'menu__menu_item_translations',
 
     /*
      * Menu Item model used to create correct relations. Update the menu item if it is in a different namespace.
      */
-    'menu_item'             => MenuItem::class,
+    'menu_item' => MenuItem::class,
 
     /*
      * Pages table used to store pages
      */
-    'pages_table'             => 'page__pages',
+    'pages_table' => 'page__pages',
 
     /*
      * Page Translations table used to store page translations
@@ -50,7 +50,7 @@ return [
     /*
      * Menu Item model used to create correct relations. Update the menu item if it is in a different namespace.
      */
-    'page'             => Page::class,
+    'page' => Page::class,
 
     /*
     | Default Menu Presenter
