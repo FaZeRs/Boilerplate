@@ -9,16 +9,13 @@
 [![StyleCI](https://styleci.io/repos/89625225/shield)](https://styleci.io/repos/89625225)
 
 ### Used resources
-* [Laravel 5.4](https://laravel.com)
+* [Laravel 5.5](https://laravel.com)
 * [Laravel 5.4 Boilerplate](http://laravel-boilerplate.com)
 * [AsgardCms](https://asgardcms.com)
 
 ### Installation
 ``` bash
 composer create-project sref/boilerplate
-```
-``` bash
-yarn
 ```
 ``` bash
 Create database and update .env file
@@ -28,9 +25,6 @@ php artisan module:migrate
 ```
 ``` bash
 php artisan module:seed
-```
-``` bash
-yarn run dev
 ```
 ``` bash
 Set INSTALLED=true in .env file

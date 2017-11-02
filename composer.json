@@ -12,7 +12,7 @@
         "php": ">=7.0.0",
         "fideloper/proxy": "^3.3",
         "laravel/framework": "5.5.*",
-        "nwidart/laravel-modules": "^2.2",
+        "nwidart/laravel-modules": "^2.5",
         "sref/bootstrap-theme": "^2.0",
         "sref/core-module": "^2.0",
         "sref/dashboard-module": "^2.0",
