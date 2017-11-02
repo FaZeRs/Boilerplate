@@ -21,7 +21,7 @@ composer create-project sref/boilerplate
 Create database and update .env file
 ```
 ``` bash
-php artisan module:migrate
+php artisan migrate
 ```
 ``` bash
 php artisan module:seed
