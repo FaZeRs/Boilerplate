@@ -8,28 +8,42 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="true">
+    <testsuites>
+        <testsuite name="Core">
+            <directory>./Modules/Core/Tests/</directory>
+        </testsuite>
+        <testsuite name="Dashboard">
+            <directory>./Modules/Dashboard/Tests/</directory>
+        </testsuite>
+        <testsuite name="Language">
+            <directory>./Modules/Language/Tests/</directory>
+        </testsuite>
+        <testsuite name="Logs">
+            <directory>./Modules/Logs/Tests/</directory>
+        </testsuite>
+        <testsuite name="Menu">
+            <directory>./Modules/Menu/Tests/</directory>
+        </testsuite>
+        <testsuite name="Setting">
+            <directory>./Modules/Setting/Tests/</directory>
+        </testsuite>
+        <testsuite name="User">
+            <directory>./Modules/User/Tests/</directory>
+        </testsuite>
+        <testsuite name="Workshop">
+            <directory>./Modules/Workshop/Tests/</directory>
+        </testsuite>
+    </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">
-                ./app
-            </directory>
+            <directory suffix=".php">./app</directory>
         </whitelist>
     </filter>
     <php>
         <env name="APP_ENV" value="testing"/>
-        <env name="INSTALLED" value="false"/>
+        <env name="APP_URL" value="http://localhost"/>
         <env name="CACHE_DRIVER" value="array"/>
-        <env name="DB_CONNECTION" value="sqlite_testing"/>
-        <env name="ENABLE_REGISTRATION" value="true"/>
-        <env name="QUEUE_DRIVER" value="sync"/>
-        <env name="REGISTRATION_CAPTCHA_STATUS" value="false"/>
         <env name="SESSION_DRIVER" value="array"/>
+        <env name="QUEUE_DRIVER" value="sync"/>
     </php>
-    <testsuites>
-        <testsuite name="User">
-            <directory suffix="Test.php">
-                ./Modules/User/Tests/
-            </directory>
-        </testsuite>
-    </testsuites>
 </phpunit>
