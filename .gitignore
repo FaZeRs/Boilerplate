@@ -24,8 +24,6 @@ Todo.rtf
 .vagrant
 /.vagrant
 npm-debug.log
-/Modules/*
-/Themes/*
 *.gitkeep
 /public/themes/*
 /public/modules/*
